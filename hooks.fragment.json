@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"/ABSOLUTE/PROJECT/PATH/.codex/hooks/necessity_check.py\"",
+            "commandWindows": "py -3 \"C:\\ABSOLUTE\\PROJECT\\PATH\\.codex\\hooks\\necessity_check.py\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
